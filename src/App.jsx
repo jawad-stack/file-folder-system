@@ -1,6 +1,6 @@
 /* eslint-disable react/no-children-prop */
 import { fileSystem } from "./assets/filesystem";
-import { File } from "./components/File";
+import File from "./components/File";
 import Folder from "./components/Folder";
 
 export default function App() {
