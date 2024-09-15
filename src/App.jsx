@@ -1,20 +1,18 @@
-/* eslint-disable react/no-children-prop */
-import { fileSystem } from "./assets/filesystem";
-import File from "./components/File";
-import Folder from "./components/Folder";
+ // App.js
+import { AuthProvider } from './contexts/AuthContext.jsx';
+import { Suspense } from 'react';
+import Routers from './Navigation/Routers.jsx';
 
-export default function App() {
 
+
+function App() {
   return (
-    <div>
-      <h1>File Folder System</h1>
-      {fileSystem.map((item, i) => {
-        if (item.type === "file") {
-          return <File name={item.name} key={item.name + i} />
-        } else {
-          return <Folder name={item.name} children={item.children} key={item.name + i} />
-        }
-      })}
-    </div>
+    <AuthProvider>
+      <Suspense fallback={"Loading"}>
+        <Routers />
+      </Suspense>
+    </AuthProvider>
   );
 }
+
+export default App;
