@@ -1,3 +1,12 @@
-body {
-  place-items: start !important;
+input {
+  line-height: 50px;
+  height: 50px;
+  width: 40%;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+button{
+  padding: 10px;
+  background-color: coral
 }
