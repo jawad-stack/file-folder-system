@@ -1,8 +1,8 @@
 /* eslint-disable */
 // AuthContext.js
 import { createContext, useContext, useEffect, useState } from 'react';
-import { auth } from '../firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { auth } from '../firebase';
 
 // Create Context
 const AuthContext = createContext();

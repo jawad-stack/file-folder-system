@@ -32,7 +32,7 @@ export const routes = [
     }, {
         routeType: "Private",
         path: "/dashboard",
-        name: "Dashboard",
+        name: "Dashboard (Private Route)",
         element: <Dashboard />
     }
 ]
