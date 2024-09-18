@@ -5,8 +5,8 @@ import { routes } from "../routerConfig"
 
 const ComponentWithHeaderAndSidebar = ({ children }) => {
     const location = useLocation();
-
     const navigate = useNavigate();
+    
     return (
         <div style={{ display: "flex" }} className="flex w-full">
             <div style={{ width: "30%" }}>

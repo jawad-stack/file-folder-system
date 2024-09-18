@@ -6,6 +6,7 @@ const FileFolderSystem = React.lazy(() => import("./components/FileFolderSystem"
 const SignUp = React.lazy(() => import("./components/SignUp"))
 const Login = React.lazy(() => import("./components/Login"))
 const Dashboard = React.lazy(() => import("./components/Dashboard"))
+const PDFDownload = React.lazy(() => import("./components/PDFDownload"))
 
 
 export const routes = [
@@ -34,5 +35,11 @@ export const routes = [
         path: "/dashboard",
         name: "Dashboard (Private Route)",
         element: <Dashboard />
+    },
+    {
+        routeType: "Public",
+        path: "/document-download",
+        name: "Pdf Download (WebWorker)",
+        element: <PDFDownload />
     }
 ]

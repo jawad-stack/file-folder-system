@@ -12,7 +12,6 @@ const Routers = () => {
                     <Route key={item.path} path={item.path} element={item.routeType === "Private" ? <PrivateRoute>
                         <ComponentWithHeaderAndSidebar>{item.element}</ComponentWithHeaderAndSidebar>
                     </PrivateRoute> :
-                        // item.element
                         <ComponentWithHeaderAndSidebar>{item.element}</ComponentWithHeaderAndSidebar>
                     } />)}
             </Routes>
